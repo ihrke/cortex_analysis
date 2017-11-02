@@ -1,0 +1,100 @@
+Read the following reference about the experimenal paradigm: 
+
+Jocham, G., Klein, T. A., & Ullsperger, M. (2011). 
+Dopamine-mediated reinforcement learning signals in the striatum and ventromedial prefrontal cortex underlie value-based choices. 
+The Journal of Neuroscience, 31(5), 1606-1613. 
+
+
+########################################################################################################################################
+
+Structure of the paradigm in brief:
+
+(1) Learning phase: AB, CD and EF symbol pairs presented 120 times each, 360 times in total
+(2) Transfer phase: all the possible item combinations (e.g., AB, AC, AE, AF...) presented 12 times
+
+
+########################################################################################################################################
+
+Stimulation code:
+A- real tDCS
+B- sham tDCS
+
+
+########################################################################################################################################
+Output for the LEARNING phase:
+---------------------------------------------------
+Block: 
+1: first block
+.
+.
+.
+6: sixth block (last block)
+---------------------------------------------------
+Pair_type:
+1: AB
+2: CD
+3: EF
+---------------------------------------------------
+Feedback_type:
+1: positive
+0. negative
+---------------------------------------------------
+Side:
+not very important, to balance the presentation of 
+the items on the left (1) and right (2) side
+---------------------------------------------------
+RT:
+reaction time in msec
+---------------------------------------------------
+ACC:
+accuracy
+1: items with the higher reward probability were chosen 
+   A over B, 
+   C over D, and 
+   E over F
+0: items with lower rew.prob. were chosen (B, D or F)
+missed: no decision was made in 1700 msec
+
+########################################################################################################################################
+Output for the TRANSFER phase:
+---------------------------------------------------
+Side:
+not very important, to balance the presentation of 
+the items on the left and right side
+---------------------------------------------------
+RT: reaction time
+---------------------------------------------------
+ACC:
+accuracy
+1: items with the higher reward probability were chosen 
+   A over B, 
+   C over D, and 
+   E over F
+0: items with lower rew.prob. were chosen (B, D or F)
+missed: no decision was made in 1700 msec
+---------------------------------------------------
+Type: all the possible item combinations
+
+1:AB
+2:AC
+3:AD
+4:AE
+5:AF
+6:BC
+7:BD
+8:BE
+9:BF
+10:CD
+11:CE
+12:CF
+13:DE
+14:DF
+15:EF
+
+
+########################################################################################################################################
+
+
+
+
+
