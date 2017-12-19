@@ -1,6 +1,6 @@
 # Transcranial direct current stimulation over the left prefrontal cortex increases randomness of choice in instrumental learning
 
-todo: [![DOI](https://zenodo.org/badge/19634/ihrke/2016-placebo-tdcs-study.svg)](https://zenodo.org/badge/latestdoi/19634/ihrke/2016-placebo-tdcs-study) 
+todo: [![DOI](https://zenodo.org/badge/19634/ihrke/2016-placebo-tdcs-study.svg)](https://zenodo.org/badge/latestdoi/19634/ihrke/2016-placebo-tdcs-study)
 
 This repository contains data for the paper "Transcranial direct current stimulation over the left prefrontal cortex increases randomness of choice in instrumental learning".
 
@@ -36,8 +36,16 @@ Transcranial direct current stimulation over the left prefrontal cortex increase
 
 - Raw data for the learning phase is located in `data/raw/Learning`
 - Raw data for the transfer phase is located in `data/raw/Transfer`
-- Subfolders A and B code the type of stimulation 
+- Subfolders A and B code the type of stimulation
 - Raw data is provided in `.txt` format
+
+- in the folder `data/`, there are scripts `learn.R` and `transfer.R` that read in the raw data-files and put them into a coherent dataframe for further analysis
+- the directory structure is compatible with the [ProjectTemplate](http://projecttemplate.net/) package; if you have installed this package, you can load the data into your R-workspace by changing you working directory to the repository and running
+
+~~~{R}
+library(ProjectTemplate)
+load.project()
+~~~
 
 ## Output for the LEARNING phase:
 
@@ -57,7 +65,7 @@ Variables are coded as follows:
 - `Side` - presentation of the items on the left (1) and right (2) side
 - `RT` - reaction time in msec
 - `ACC` - accuracy: 1 items with the higher reward probability were chosen (e.g., A over B), 0 items with lower rew.prob. were chosen (e.g., B over A), missed no decision was made within 1700 msec
-- `Type`  - code for all possible item combinations 
+- `Type`  - code for all possible item combinations
 	- 1:AB
 	- 2:AC
 	- 3:AD
