@@ -1,6 +1,6 @@
 # Transcranial direct current stimulation over the left prefrontal cortex increases randomness of choice in instrumental learning
 
-todo: [![DOI](https://zenodo.org/badge/19634/ihrke/2016-placebo-tdcs-study.svg)](https://zenodo.org/badge/latestdoi/19634/ihrke/2016-placebo-tdcs-study)
+[![DOI](https://zenodo.org/badge/109244427.svg)](https://zenodo.org/badge/latestdoi/109244427)
 
 This repository contains data for the paper "Transcranial direct current stimulation over the left prefrontal cortex increases randomness of choice in instrumental learning".
 
